@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="cmanObjMove_v091.js" charset="utf-8"></script>
+<title>iClone&CharacterCreator tutorial 有志サイト</title> 
+
+
+</head>
+<body>
+    <body link="#ffffff" vlink="#ffffff" alink="#ffffff">
+    <div class = "header" id="wrap">
+    
+    <header>
+    <h1><a href="index.HTML">iClone&CharacterCreator × IPUT</a></h1>
+    </header>
+    </div>
+    <div class="sidenavi" id="sidenavi">
+        <div class="item"><a href="sample.html">UI操作<br>＜CharacterCreator＞</CharacterCreator></a></div>
+        <div class ="subitem">
+    
+
+        <ul>
+            <li>
+                <p>キャラを出し<br>服を着せる</p>
+                <p>顔、体格設定(服の再調整)<br>・顔写真</p>
+                <p>色を変えよう(マテリアル)<br>髪と服</p>
+            </li>
+        </ul>
+
+    
+            
+    
+        </div>
+        <div class="item"><a href="tutorial_2.html">UI操作　<br>＜iClone＞</a></div>
+        
+        <ul>
+            <li>
+                <p>iCloneに持ち込む</p>
+                <p>アニメーションをつける</p>
+                <p>背景・エフェクトをつける </p>
+            </li>
+        </ul>
+
+
+
+
+
+
+    </div>
+
+<!--
+    <div class ="shortcut_key">
+        <ul>
+            <li>
+                <p>Q:選択</p>
+                <p>W:移動</p>
+                <p>E: 回転</p>
+                <p>R: スケール変更</p>
+                <p>A: 左側面</p>
+                <p>S: 右側面</p>
+                <p>D: 背面</p>
+                <p>F: 前面</p>
+                <p>G: 上からの視点</p>
+                <p>J: フェイス（顔、人のみ）</p>
+                <p>K: 全オブジェクト</p>
+            </li>
+        </ul>
+
+    </div>
+-->
+
+    <div class= "contentsbox" id="contentsbox">
+    <div class = "main_text">
+
+
+
+
+        
+
+
+<!--
+        <div class="img">
+            <img src = "ショートカットキー設定.png" cmanOMat="movearea">
+        </div>
+-->
+        
+        <h1>UI操作</h1>
+        <h2><span class="tooltip">Content<span class="description_top">出来合いのものやパーツはここにある。</span></span></h2>
+
+        <p>ここでは、キャラクターの顔つきや体型、服装が変更できます。</p>
+        <div class="img">
+            <img src = "./tutorial_png/画像1.png">
+        </div>
+
+        <h2><span class="tooltip">Scene<span class="description_top">今、使っているアイテムがすべて表示される</span></span></h2>
+        <p>ここでは、 <span class="tooltip">可視化<span class="description_top">見えたり見えなかったりできる</span></span>のオンオフや<span class="tooltip">影<span class="description_top">ちなみに影は地面に映る黒い部分、陰は物体の光に当たっていない面の事を指す。</span></span>のオンオフ、
+            <br><span class="tooltip">法線<span class="description_top">3DCGでは面から垂直に伸びる法線が面の裏表を決める</span></span>など見え方の切り替えなどができます。</p>
+        <div class="img">
+            <img src = "./tutorial_png/画像2.png">
+        </div>
+
+        <h2>①キャラクターを出してみよう</h2>
+
+        <p>はじめに、左枠"Content"内の"avatar" → "Base"内から好きなベースを決めます。</p>
+
+        
+        <div class="img">
+            <img src = "./tutorial_png/画像3.png">
+        </div>
+
+        <p>ここでは、同"Content"内の"Actor Project Template"からも選ぶことができます。
+            <br>今回は赤丸の"Judy"を選びます。</p>
+
+                
+        <div class="img">
+            <img src = "./tutorial_png/画像4.png">
+        </div>
+
+        <h2>②服を着せよう (好きなパ―ツを選んでドラッグ＆ドロップ)</h2>
+        
+
+        <p>まず、“content”内の“style”から髪を選びます。</p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像5.png">
+        </div>
+
+        <p>同“content”内の“cloth”からキャラクターに着せたい服を選びます。
+            <br>画像では、“content”>>“Cloth”>>“fullbody”から“Dress_A”を選びます。</p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像6.png">
+        </div>
+        
+        <p>使わない服は、“scene”から選んで”delete”か、左クリックからdeleteで削除できます。 </p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像7.png">
+        </div>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像8.png">
+        </div>
+
+        <p>服の他にも、目の色も変更できます。 </p>
+        
+        <div class="img">
+            <img src = "./tutorial_png/画像9.png">
+        </div>
+
+        <p>ここでは戻しておきます。(巻き戻し【CTRL + Z】) </p>
+
+        <h2>③顔と体格設定(服の調整)</h2>
+
+        <p>次に、<span class="tooltip">右画面<span class="description_top">右画面には、色データなどが格納されています。</span></span>の“Modify“で顔と体の容姿を調整します。 
+            <br> 身体の調整には二つのアプローチがあります。
+            <br> 1.初めに、ボディを選択した状態で “Modify”の轆轤(ろくろ)のようなマークを開きます。 </p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像10.png">
+        </div>
+
+        <p>開くと体のパーツごとにパラメーターを変更できるようになっています。
+            <br>パーツ のタブをクリックすれば、ゲージが現れます。これらで好きなように調整できます。 
+            <br>もう一つは、右上の引っ張るようなマーク“Morph”をクリックしてオンにすると、
+            <br>カーソルに重なったパーツが光ります。
+            <br>その状態でホールドしてドラッグすると、より直感的にパーツの調整ができます。</p>
+        
+        <div class="img">
+            <img src = "./tutorial_png/画像11.png">
+        </div>
+        
+        <div class="img">
+            <img src = "./tutorial_png/画像12.png">
+        </div>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像13.png">
+        </div>
+
+        <p>【服の組合せや身体の大きさによって服が変になってしまった場合】 </p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像14.png">
+        </div>
+
+        <p>上に着ている服を選択した状態でModifyの一番左を選びます。
+            <br>その中からさらにModifyの6番目、Transfer SkinWeightsを選択します。 </p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像15.png">
+        </div>
+        
+        <div class="img">
+            <img src = "./tutorial_png/画像16.png">
+        </div>
+
+        <p>その設定のまま、applyを適応して下準備は完了。
+            <br>Transfer SkinWeightsの４つ上にあるConform、その中にある 
+            <br>Calculate Collisionを選択します。これらの工程により、貫通してしまった服のサイズ感を
+            <br>整えることができます。 </p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像17.png">
+        </div>
+        <div class="img">
+            <img src = "./tutorial_png/画像18.png">
+        </div>
+
+        <h2>④色を変えよう（服と髪）</h2>
+        <p>色の変え方は、服と髪とでは少々違う。
+            <br>まずは、服の色から変えていく。服を選択してModifyの左から５番目にある
+            <br><span class="tooltip">Material<span class="description_top">マテリアルとは、色や光沢、透明度など見た目のデータの事です。</span></span>(チェス盤のようなマーク)を開いて、上から三番目のMaterial Settingを開きます。
+            <br>Material Settingの一番上、Diffuse Colorは基本的な色の調節を行う場所です。
+            <br>今回はワンピースの色を変えます。(写真は色は<span class="tooltip">#55557f<span class="description_top">#の後の６桁の数字で色を指定できます</span></span>)</p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像19.png">
+        </div>
+
+        <p>次は髪の場合です。同じMaterial から今度はShader Settingを開きます。 </p>
+        
+        <div class="img">
+            <img src = "./tutorial_png/画像20.png">
+        </div>
+
+        <p>その中のStrandColorが髪の毛の色を変える用のタブです。 
+            <br>中のRootColor、EndColorはそれぞれ根本側、毛先側の色をコントロールできます。
+            <br>今回はどちらも黒にしておきましょう。</p>
+
+        <div class="img">
+            <img src = "./tutorial_png/画像21.png">
+        </div>
+
+        <p>髪の毛はいくつかにパ―ツ分けされているので一つずつ変えると良いでしょう。<br>
+            <br>
+            <br>
+            <br>CCで出来る作業はここまでです。
+            <br>今度はiCloneでの作業に移りましょう</p>
+
